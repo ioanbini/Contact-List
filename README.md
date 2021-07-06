@@ -30,14 +30,14 @@ Just use the components that make more sence and display the screens / data nice
 ## User stories
 1. The user can add contacts and view the contacts in the contact list 
 2. The user can also delete and edit a contact 
-3. Finaly the user can view the  details of a specific contac is also available by clicking the desired contact in the contact list 
+3. Finally, the user can view the details of a specific contact by clicking the desired contact in the contact list
 
 
 ### Home/Add Contact page
 
 The Home/Add Contact page contains:
 
-1. a form that , user can add a new contact with input fields such as (name-last name, email address, telephone number and address)
+1. a form that user can add a new contact with input fields such as (name/last name, email address, telephone number and address)
 2. a button to direct the user to the contacts list page
 
 

@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## App details
 
-## Available Scripts
+The application was bootstraped using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html). The application deveoped with the following  
+aditional libraries :
 
-In the project directory, you can run:
+- [React Router](https://github.com/ReactTraining/react-router) - for client-side (browser) routing
+- [axios](https://github.com/axios/axios) - for HTTP requests
+-  A library such as [Semantic Ui](https://react.semantic-ui.com/)
+ 
 
-### `npm start`
+## Fake REST API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The only already installed dependency is the [JSON server](https://github.com/typicode/json-server) (development dependency), a "fake" REST API. This API exposes 1  resource (contacts) and you can view it on `db.json` file. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Run locally
 
-### `npm test`
+You need to have node.js installed. I am using node version `12.17` and npm version `6.14.4`, but you can use any modern node/npm version you want. When you are ready, you can install all dependencies and run the development servers by typing the below commands:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install
+npm run api or npm start // Runs API server in port 3001
+npm start // Runs the create react app server in port 3000
+open http://localhost:3000
+```
 
-### `npm run build`
+Just use the components that make more sence and display the screens / data nicely.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User stories
+1. The user can add contacts and view the contacts in the contact list 
+2. The user can also delete and edit a contact 
+3. Finaly the user can view the  details of a specific contac is also available by clicking the desired contact in the contact list 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Home/Add Contact page
 
-### `npm run eject`
+The Home/Add Contact page contains:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. a form that , user can add a new contact with input fields such as (name-last name, email address, telephone number and address)
+2. a button to direct the user to the contacts list page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Contacts List page
 
-## Learn More
+The Contacts List page contains :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. a list with all the contacts 
+2. a button to direct the user to the add contact page
+3. every contact item is clickable an directs to each contact's details page 
+4. two buttons one to remove the contact and one to edit the contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Contact Details page
 
-### Code Splitting
+The Contact Details page contains :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. a contact card with informations
+2. a button to return to contact list 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
